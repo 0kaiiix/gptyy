@@ -11,7 +11,6 @@ import requests
 import json
 import os
 from dotenv import load_dotenv
-import pkg_resources
 #streamlit run TF.py
 
 # 載入環境變數和檢查依賴
@@ -220,8 +219,8 @@ with st.sidebar:
     
     # 檢查OpenAI套件版本
     try:
-        openai_version = pkg_resources.get_distribution("openai").version
-        st.markdown(f"🔌 OpenAI SDK 版本: `{openai_version}`")
+        import openai
+        st.markdown(f"🔌 OpenAI SDK 版本: `{openai.__version__}`")
     except:
         st.markdown("❓ 無法檢測OpenAI版本")
     
