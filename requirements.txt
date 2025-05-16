@@ -1,4 +1,4 @@
-﻿# 主要套件
+# 主要套件
 streamlit
 openai
 gTTS
@@ -9,4 +9,4 @@ streamlit-lottie
 requests
 
 # 格式處理
-python-dateuti
+python-dateutil
