@@ -224,14 +224,6 @@ with st.sidebar:
     except:
         st.markdown("❓ 無法檢測OpenAI版本")
     
-    # 添加重設聊天按鈕
-    if st.button("🔄 重設聊天", use_container_width=True):
-        st.session_state.messages = []
-        st.session_state.audio_counter = 0
-        st.session_state.user_input = ""
-        st.session_state.sidebar_counter = 1
-        st.experimental_rerun()
-    
     st.markdown("---")
     st.markdown("### 🤖 關於")
     st.markdown("這是一個使用 ChatGPT 3.5 和 gTTS 的 AI 對話與語音合成應用")
